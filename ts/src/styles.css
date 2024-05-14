@@ -1,0 +1,312 @@
+nav {
+    float: left;
+    width: 200px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    position: fixed;
+    /* Torna o menu fixo */
+    top: 0;
+    /* Alinha o menu ao topo */
+    left: 0;
+    /* Alinha o menu ao lado esquerdo */
+    height: 100%;
+    /* Define a altura do menu para ocupar toda a altura da tela */
+    overflow-y: auto;
+    /* Adiciona uma barra de rolagem vertical caso o conteúdo seja maior do que a altura da tela */
+    z-index: 1;
+    /* Garante que o menu fique acima dos outros elementos */
+
+}
+
+
+nav h1 {
+    background-color: #FCA74F;
+    color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos do cabeçalho */
+header {
+
+    margin-left: 220px;
+    /* Ajusta a margem para evitar sobreposição com o nav */
+    background-color: #FDF1EB;
+    padding: 20px;
+    overflow: auto;
+    /* Evita que o conteúdo do header fique sobre o nav */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content {
+    font-size: 60%;
+    flex-grow: 1;
+}
+
+.right-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.right-content>* {
+    margin-left: 10px;
+}
+
+.user-email {
+    font-size: x-small;
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #FDF1EB;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Adiciona margem na parte inferior */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    select {
+        margin-right: 30px;
+    }
+}
+
+.left-content {
+    flex-grow: 1;
+}
+
+.right-content {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* Adiciona uma direção de coluna */
+}
+
+.right-content>* {
+    margin-left: 10px;
+}
+
+
+
+.user-email {
+    font-size: smaller;
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos do hero */
+#hero {
+    margin-top: 20px;
+    /* Adiciona margem na parte superior */
+    margin-bottom: 20px;
+    /* Adiciona margem na parte inferior */
+    margin-left: 250px;
+}
+
+#hero h1 {
+    color: #FF8C00;
+}
+
+#hero div {
+    margin-bottom: 20px;
+    /* Adiciona margem entre o título e o iframe */
+}
+
+#hero h3 {
+    padding-top: 45px;
+ 
+}
+
+#hero iframe {
+
+    margin-top: 20px;
+    /* Adiciona margem entre o iframe e o texto */
+}
+
+#hero p {
+    margin-bottom: 0;
+    /* Remove a margem inferior do parágrafo */
+}
+
+
+#detalhes {
+    float: right;
+    /* Flutua o aside para o lado direito */
+    width: 30%;
+    /* Define a largura do aside */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    /* Adiciona margem superior */
+}
+
+#detalhes .college{
+    margin-top: 40px;
+    color: #555;
+}
+
+#detalhes h3 {
+    margin-top: 0;
+}
+
+#detalhes div {
+    margin-bottom: 10px;
+}
+
+#detalhes span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#detalhes div>div {
+    margin-left: 20px;
+}
+
+/* Estilos para o iframe */
+#hero iframe {
+    float: left;
+    /* Flutua o iframe para a esquerda */
+    margin-right: 20px;
+    /* Adiciona margem à direita do iframe */
+}
+
+#resumo {
+    margin-left: 250px;
+    clear: both;
+    /* Limpa a flutuação */
+    padding: 10px;
+}
+
+#resumo h2 {
+    margin-top: 0;
+    /* Remove a margem superior padrão */
+    color: #080808;
+    /* Cor do texto do h2 */
+    background-color: #FDF1EB;
+    /* Cor de fundo laranja para o h2 */
+}
+
+#resumo span {
+    display: block;
+    /* Faz o texto ocupar toda a largura */
+    margin-top: 10px;
+    /* Adiciona margem acima do texto */
+}
+
+/* Estilos da seção de discussões */
+#discussoes {
+
+    margin-top: 20px;
+}
+
+#discussoes h2 {
+    background-color: #FDF1EB;
+    /* Mesma cor de fundo do h2 */
+    padding: 10px;
+    margin-top: 0;
+    color: #333;
+    /* Cor do texto */
+}
+
+#discussoes h3 {
+    color: #333;
+    /* Cor do texto */
+    margin-top: 10px;
+    /* Adiciona margem superior */
+}
+
+#discussoes span {
+    color: #555;
+    /* Cor do texto */
+    display: block;
+    /* Faz o texto ocupar toda a largura */
+    margin-top: 10px;
+    /* Adiciona margem superior */
+}
+
+#discussoes button {
+    background-color: #FCA74F;
+    /* Cor laranja para o botão */
+    color: #fff;
+    /* Cor do texto do botão */
+    padding: 10px 20px;
+    /* Adiciona preenchimento ao botão */
+    border: none;
+    /* Remove a borda do botão */
+    border-radius: 5px;
+    /* Adiciona borda arredondada */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-top: 20px;
+    /* Adiciona margem superior ao botão */
+    margin-left: 35%;
+}
+
+#discussoes button:hover {
+    background-color: #FF8C00;
+    /* Cor laranja mais escura ao passar o mouse */
+}
+
+#discussoes div h2 {
+    color: #FF8C00;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+#discussoes div h3 {
+    font-size: small;
+}
+
+.footer {
+    margin-top: 50px;
+    font-size: small;
+}

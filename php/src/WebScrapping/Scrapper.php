@@ -1,30 +1,20 @@
+// src/Scrapper.php
 <?php
 
 namespace Chuva\Php\WebScrapping;
 
-use Chuva\Php\WebScrapping\Entity\Paper;
-use Chuva\Php\WebScrapping\Entity\Person;
+require_once 'Entity/Paper.php';
 
-/**
- * Does the scrapping of a webpage.
- */
+use Chuva\Php\WebScrapping\Entity\Paper;
+
 class Scrapper {
 
-  /**
-   * Loads paper information from the HTML and returns the array with the data.
-   */
-  public function scrap(\DOMDocument $dom): array {
-    return [
-      new Paper(
-        123,
-        'The Nobel Prize in Physiology or Medicine 2023',
-        'Nobel Prize',
-        [
-          new Person('Katalin Karikó', 'Szeged University'),
-          new Person('Drew Weissman', 'University of Pennsylvania'),
-        ]
-      ),
-    ];
-  }
+    public function scrap(\DOMDocument $dom): array {
+        // Extrai os dados da página HTML e retorna um array de objetos Paper
+        $data = [];
 
+        // Lógica para extrair os dados e criar objetos Paper aqui...
+
+        return $data;
+    }
 }
